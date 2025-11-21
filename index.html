@@ -1,12 +1,76 @@
-<!-- project-root/index.html -->
 <!doctype html>
-<html lang="">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artlink</title>
-    <!-- <-- ubah di sini -->
+    <title>Artlink - Platform Komisi Kreatif</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      <!doctype html>
+      <html lang="id">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Artlink - Platform Komisi Kreatif</title>
+
+          <script src="https://cdn.tailwindcss.com">
+    </script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Palet Warna Kustom Sesuai Desain
+              'art-blue-dark': '#48637F',
+              'art-blue-light': '#D6DDE6',
+              'art-beige-dark': '#D4C6B2',
+              'art-beige-light': '#F4EFE6',
+              'art-yellow': '#F9F4E4',
+              'art-text-dark': '#2B3A4F',
+            },
+            borderRadius: {
+              xl: '0.75rem',
+              '2xl': '1rem',
+              '3xl': '1.5rem',
+              '4xl': '2rem',
+            },
+            boxShadow: {
+              art: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06)',
+              'art-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05)',
+              'art-inner': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+            },
+          },
+        },
+      }
+    </script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+      :root {
+        --art-blue-dark: #48637f;
+        --art-blue-light: #d6dde6;
+        --art-beige-dark: #d4c6b2;
+        --art-beige-light: #f4efe6;
+        --art-yellow: #f9f4e4;
+        --art-text-dark: #2b3a4f;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--art-beige-light);
+        color: var(--art-text-dark);
+      }
+      .router-link-active {
+        font-weight: 600;
+        background-color: #f9f4e4;
+        padding: 8px 20px;
+        border-radius: 9999px;
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>

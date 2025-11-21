@@ -1,51 +1,76 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router'
+
+// Item navigasi
+const navItems = [
+  { name: 'Beranda', route: '/' },
+  { name: 'Kreator', route: '/creator' },
+  { name: 'Galeri', route: '/gallery' },
+  { name: 'Tentang', route: '/about' },
+]
+</script>
 
 <template>
   <header class="header">
+    <div class="logo">Artlink</div>
     <nav class="nav">
-      <h1 class="logo">Artlink</h1>
-
-      <ul class="nav-links">
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/creators">Creators</router-link></li>
-        <li><router-link to="/gallery">Gallery</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
-      </ul>
+      <RouterLink
+        v-for="item in navItems"
+        :key="item.name"
+        :to="item.route"
+        class="nav-item"
+        active-class="active"
+      >
+        {{ item.name }}
+      </RouterLink>
     </nav>
   </header>
 </template>
 
 <style scoped>
 .header {
-  padding: 16px 24px;
-  border-bottom: 1px solid #ddd;
-  background: #fafafa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #f8f4ea; /* Latar belakang header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #375369; /* Warna logo dari wireframe */
+  border: 2px solid #375369;
+  padding: 5px 15px;
+  border-radius: 20px;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
   gap: 20px;
 }
 
-.nav-links a {
+.nav-item {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  color: #375369;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
 }
 
-.nav-links a.router-link-active {
-  color: #42b883; /* warna aktif */
+.nav-item:hover {
+  background-color: #e6e1d9; /* Hover effect */
+}
+
+.nav-item.active {
+  background-color: #e6e1d9; /* Tampilan aktif dari wireframe */
+  font-weight: bold;
 }
 </style>
