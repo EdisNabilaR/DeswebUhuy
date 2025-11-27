@@ -62,6 +62,14 @@
 </template>
 
 <style scoped>
+.about-view {
+  padding: 60px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* Section Divider */
 .section {
   padding: 60px 0;
 }
@@ -84,9 +92,18 @@
 }
 
 .content-text h2 {
-  font-size: 32px;
+  font-size: 36px;
+  color: #1d3b5c;
+  margin-bottom: 25px;
+  border-bottom: 4px solid #1d3b5c;
+  padding-bottom: 8px;
+  font-weight: 700;
+}
+
+.content-text p {
+  margin-top: 20px;
+  line-height: 1.6;
   color: #375369;
-  margin-bottom: 20px;
 }
 
 .placeholder-image {
@@ -116,17 +133,29 @@
 }
 
 .card h3 {
+  font-size: 32px;
+  color: #1d3b5c;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #1d3b5c;
+  padding-bottom: 6px;
+  font-weight: 700;
+}
+
+.card p {
+  margin-top: 15px;
+  line-height: 1.5;
   color: #375369;
-  font-size: 24px;
-  margin-bottom: 15px;
 }
 
 /* Contact Section */
 .contact-section h2 {
-  font-size: 28px;
-  color: #375369;
+  font-size: 36px;
+  color: #1d3b5c;
   margin-bottom: 30px;
+  border-bottom: 4px solid #1d3b5c;
+  padding-bottom: 8px;
   text-align: center;
+  font-weight: 700;
 }
 
 .contact-container {
