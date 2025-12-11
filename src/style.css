@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+/* ===== Artlink Theme (palet kamu) ===== */
+:root{
+  --artlink-dark:   #363062;
+  --artlink-mid:    #4D4C7D;
+  --artlink-accent: #F99417;
+  --artlink-bg:     #F5F5F5;
+}
+
+html, body {
+  background: var(--artlink-bg);
+  color: #111827; /* gray-900 */
+}
+
+/* helper class kecil */
+.text-primary{ color: var(--c-primary); }
+.text-secondary{ color: var(--c-secondary); }
+.text-accent{ color: var(--c-accent); }
+.bg-primary{ background: var(--c-primary); }
+.bg-accent{ background: var(--c-accent); }
+.bg-soft{ background: var(--c-soft); }
+.border-primary{ border-color: var(--c-primary); }

@@ -95,7 +95,7 @@ export const gallery = [
   {
     id: 12,
     title: "Manga Ink Battle Scene",
-    image: "httpsum.photos/600?random=22",
+    image: "https://picsum.photos/600?random=22",
     creator: "Karin Natsumi",
     creatorId: 12,
     price: 190000,
