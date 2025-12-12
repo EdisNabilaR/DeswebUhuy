@@ -163,6 +163,24 @@ const isActivePath = (path) => route.path === path
         </li>
       </ul>
 
+              <!-- my page -->
+        <li>
+          <RouterLink to="/my-page" v-slot="{ isActive }">
+            <span
+              class="relative pb-1 transition"
+              :class="isActive
+                ? 'text-[#363062] font-semibold'
+                : 'text-[#4D4C7D] hover:text-[#363062]'"
+            >
+              my-page
+              <span
+                v-if="isActive"
+                class="absolute -bottom-1 left-0 w-full h-[2px] bg-[#F99417] rounded-full"
+              />
+            </span>
+          </RouterLink>
+        </li>
+
       <!-- RIGHT SIDE (CTA) -->
       <div class="hidden md:flex items-center gap-3">
         <RouterLink
