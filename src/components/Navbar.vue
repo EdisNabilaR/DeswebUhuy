@@ -172,7 +172,7 @@ const isActivePath = (path) => route.path === path
                 ? 'text-[#363062] font-semibold'
                 : 'text-[#4D4C7D] hover:text-[#363062]'"
             >
-              my-page
+              Halamanku
               <span
                 v-if="isActive"
                 class="absolute -bottom-1 left-0 w-full h-[2px] bg-[#F99417] rounded-full"

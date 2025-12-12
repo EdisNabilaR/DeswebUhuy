@@ -1,6 +1,8 @@
 <script setup>
 const steps = [
   "Lorem ipsum lorem ipsum.",
+  "Lorem ipsum lorem ipsum.",
+  "Lorem ipsum lorem ipsum.",
 ]
 </script>
 
